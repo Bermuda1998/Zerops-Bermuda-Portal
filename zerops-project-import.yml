@@ -1,0 +1,28 @@
+#yamlPreprocessor=on
+project:
+  name: bermuda-portal
+  corePackage: LIGHT
+
+services:
+  - hostname: portal
+    type: go@1
+    zeropsSetup: portal
+    buildFromGit: https://github.com/Bermuda1998/Zerops-Bermuda-Portal
+    enableSubdomainAccess: true
+    minContainers: 1
+    maxContainers: 1
+    verticalAutoscaling:
+      cpuMode: SHARED
+      minCpu: 1
+      maxCpu: 2
+      startCpuCoreCount: 1
+      minRam: 0.5
+      maxRam: 1
+      minDisk: 1
+      maxDisk: 2
+    envSecrets:
+      CLOUDFLARE_API_TOKEN: ""
+      BERMUDA_ZEROPS_TOKEN: ""
+      CUSTOM_DOMAIN: ""
+      BERMUDA_MASTER_KEY: "bmk-<@generateRandomString(<32>)>"
+      BERMUDA_REGION: "prg1"
