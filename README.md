@@ -9,3 +9,4 @@ Go-based deployment edition of **Bermuda Portal** tailored for [Zerops](https://
 
 ## Related
 - Main project: [BERMUDA-PORTAL](https://github.com/Bermuda1998/BERMUDA-PORTAL)
+- Official Telegram Channel: [@bermuda1998channel](https://t.me/bermuda1998channel)
